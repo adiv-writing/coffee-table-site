@@ -186,3 +186,6 @@ html{overflow-x:clip}
 
 body{position:relative}
 .background-brushstrokes{position:absolute;inset:0;width:100%;height:100%;z-index:3;overflow:hidden;pointer-events:none;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.23}
+
+.contact-form .button{color:#f0ede4;font-weight:700;letter-spacing:.12em}
+
