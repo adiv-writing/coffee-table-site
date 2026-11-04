@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Coffee Table — poetry, fiction, and notes from a writer in Brooklyn." />
+  <meta name="theme-color" content="#d1c1a9" />
+  <title>Coffee Table — Poetry & Fiction</title>
+  <script>
+    document.documentElement.classList.add('js-loading');
+    window.addEventListener('load', () => document.documentElement.classList.remove('js-loading'), {once:true});
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+    <a class="wordmark" href="#home" aria-label="Coffee Table home">coffee<span class="mark-dot">&#183;</span>table</a>
+    <nav aria-label="Main navigation">
+      <a href="#writing">Writing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero shell">
+      <div class="hero-heading">
+        <svg class="coffee-drawing" viewBox="0 0 300 260" role="img" aria-label="A lightly shaded pencil sketch of a small round table with a coffee cup">
+            <defs>
+              <clipPath id="rear-leg-below-table">
+                <rect x="135" y="161" width="30" height="75"/>
+              </clipPath>
+              <mask id="table-under-cup" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="260">
+                <rect width="300" height="260" fill="white"/>
+                <g fill="black" stroke="black" stroke-width="1.5" transform="translate(205 120) scale(.88) translate(-185 -120)">
+                  <path d="M 160 77 L 164 109 Q 184 126 205 110 L 211 77 Z"/>
+                  <ellipse cx="185.5" cy="77" rx="25.5" ry="8"/>
+                  <path d="M 208 83 C 249 71 251 118 208 113 Z"/>
+                </g>
+              </mask>
+              <mask id="coaster-under-papers" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="260">
+                <rect width="300" height="260" fill="white"/>
+                <g fill="black" stroke="black" stroke-width="1">
+                  <path d="M 77 116 L 126 104 L 164 121 L 113 135 Z"/>
+                  <path d="M 74 113 L 125 101 L 163 118 L 111 132 Z"/>
+                  <path d="M 77 109 L 127 98 L 162 114 L 111 128 Z"/>
+                </g>
+              </mask>
+              <pattern id="pencil-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><path d="M 0 0 V 5" stroke="#686868" stroke-width=".6" opacity=".25"/></pattern>
+              <filter id="pencil-grain" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="2" seed="8" result="grain"/><feDisplacementMap in="SourceGraphic" in2="grain" scale=".65"/></filter>
+            </defs>
+            <g class="table-pencil" filter="url(#pencil-grain)">
+              <g mask="url(#table-under-cup)">
+              <ellipse cx="147" cy="242" rx="100" ry="7" fill="url(#pencil-hatch)" stroke="none" opacity=".5"/>
+              <g class="table-base">
+                <!-- Rear leg is shorter in projection and hidden by the tabletop. -->
+                <g clip-path="url(#rear-leg-below-table)">
+                  <path d="M 144 111 L 146 213 L 153 213 L 156 111 Z" fill="#d1c1a9"/>
+                  <path d="M 151 112 L 150 213 L 153 213 L 156 111 Z" fill="url(#pencil-hatch)" stroke-width=".5"/>
+                </g>
+              </g>
+              <path d="M 35 126 L 36 133 C 45 169 262 169 272 132 L 273 126" fill="url(#pencil-hatch)"/>
+              <ellipse cx="154" cy="126" rx="119" ry="29" fill="#d1c1a9"/>
+              <ellipse cx="154" cy="127" rx="116" ry="27" stroke-width=".5" opacity=".5"/>
+              <path d="M 49 133 Q 149 157 260 131 M 59 137 Q 155 156 247 138" opacity=".22"/>
+              <g class="front-table-legs">
+                <path d="M 77 154 L 68 238 L 76 239 L 90 157" fill="#d1c1a9"/>
+                <path d="M 85 156 L 73 239 L 76 239 L 90 157" fill="url(#pencil-hatch)" stroke-width=".55"/>
+                <path d="M 212 157 L 226 239 L 234 238 L 225 154" fill="#d1c1a9"/>
+                <path d="M 220 156 L 231 238 L 234 238 L 225 154" fill="url(#pencil-hatch)" stroke-width=".55"/>
+              </g>
+              <ellipse cx="205" cy="123" rx="33" ry="8" fill="url(#pencil-hatch)" stroke-width=".7" mask="url(#coaster-under-papers)"/>
+              <g class="table-papers" stroke-width=".8">
+                <path d="M 77 116 L 126 104 L 164 121 L 113 135 Z" fill="#d1c1a9"/>
+                <path d="M 77 116 L 126 104 L 164 121 L 113 135 Z" fill="url(#pencil-hatch)" stroke="none"/>
+                <path d="M 74 113 L 125 101 L 163 118 L 111 132 Z" fill="#d1c1a9"/>
+                <path d="M 77 109 L 127 98 L 162 114 L 111 128 Z" fill="#d1c1a9"/>
+                <g fill="none" opacity=".65" stroke-width=".7">
+                  <path d="M 94 110.5 Q 97 108 101 109 T 108 107.5 T 115 106 T 124 104"/>
+                  <path d="M 102 114 Q 105 111.5 109 112.5 T 116 111 T 123 109.5 T 132 107.5"/>
+                  <path d="M 110 118 Q 113 115.5 117 116.5 T 124 115 T 131 113.5 T 138 112"/>
+                </g>
+              </g>
+              </g>
+              <g class="sketched-cup" transform="translate(205 120) scale(.88) translate(-185 -120)">
+                <path d="M 210 84 C 248 72 249 116 210 111 M 212 90 C 235 83 235 107 211 105" fill="none"/>
+                <path d="M 160 77 L 164 109 Q 184 126 205 110 L 211 77" fill="#d1c1a9"/>
+                <path d="M 160 77 L 164 109 Q 184 126 205 110 L 211 77" fill="url(#pencil-hatch)"/>
+                <ellipse cx="185.5" cy="77" rx="25.5" ry="8" fill="#d1c1a9"/>
+                <ellipse cx="185.5" cy="79" rx="22" ry="5" fill="url(#pencil-hatch)" stroke="none"/>
+                <path d="M 169 88 L 171 106 M 174 90 L 176 111 M 180 91 L 181 113" opacity=".2"/>
+              </g>
+              <g class="coffee-steam" opacity=".35" transform="translate(205 120) scale(.88) translate(-185 -120)"><path d="M 178 62 C 165 49 190 43 178 28 M 194 61 C 182 47 204 40 195 25"/></g>
+            </g>
+          </svg>
+      </div>
+      <div class="hero-bottom">
+        <div class="handwriting-scene">
+          <p class="handwritten" aria-label="I've broken many pens, but I've never thrown one away."><span class="written-line" aria-hidden="true">I've broken many pens, but I've never thrown one away.</span></p>
+        </div>
+      </div>
+    </section>
+    <section id="writing" class="writing-section">
+      <div class="shell">
+      <div class="section-top"><p class="eyebrow">01 / The work</p></div>
+      <div class="writing-grid">
+        <article class="writing-card">
+          <div class="card-top"><span>Poetry</span><span aria-hidden="true">↗</span></div>
+          <h3>I've waited for this.<br/>For the world to hear me.</h3>
+          <p>Selected poems will appear here after publication.</p>
+          <span class="card-status">Coming soon</span>
+        </article>
+        <article class="writing-card card-dark">
+          <div class="card-top"><span>Fiction</span><span aria-hidden="true">↗</span></div>
+          <h3 class="fiction-title"><span class="fiction-title-row"><span>Chrysanthemum</span><svg class="chrysanthemum-sketch" viewBox="0 0 64 80" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M 32 44 Q 29 60 33 75 M 32 61 Q 21 54 20 58 Q 22 65 32 65"/><path d="M 28 25 C 16 11 32 6 34 21 C 40 7 51 18 39 27 C 54 26 53 40 39 36 C 46 50 31 54 30 40 C 22 53 10 42 24 34 C 10 34 13 21 28 25 Z"/><path d="M 35 27 C 42 33 34 40 28 35 C 23 30 29 23 35 27 Z"/></g></svg></span><span class="fiction-subtitle">A novel on loss and grief.</span></h3>
+          <p class="fiction-description"><span class="fiction-summary">Even when we're looking down, we can still find strength.</span></p>
+          <span class="card-status">In progress</span>
+        </article>
+      </div>
+      </div>
+    </section>
+    <section id="about" class="about-section shell">
+      <div class="section-top"><p class="eyebrow">02 / The author</p></div>
+      <div class="about-body">
+        <div class="about-copy">
+          <p>To my dearest reader:</p>
+          <p>Whenever someone asks me what I write about, I struggle to find an answer.</p>
+          <p>Sometimes, I just like the way certain words weave together. Sometimes, I want to create something that my future grandchildren would appreciate. Sometimes, I move my pen simply because I don't know who I'd be if I stopped.</p>
+          <p>I hope, through all my moods and phases, I've managed to create something you can appreciate.</p>
+          <p>-CT</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="shell contact-layout">
+        <div><p class="eyebrow">03 / Say hello</p><h2>Let's <em>talk.</em></h2></div>
+        <div class="contact-copy">
+          <p>Reach out with any thoughts, literary or otherwise.</p>
+          <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-describedby="contact-result">
+            <input type="hidden" name="access_key" value="f83bc2c5-c6f1-41d8-b1ce-8fcbf86286a9" />
+            <input type="hidden" name="subject" value="New message for Coffee Table" />
+            <input type="hidden" name="from_name" value="Coffee Table website" />
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+            <input type="checkbox" name="botcheck" class="contact-honeypot" tabindex="-1" aria-hidden="true" />
+            <div class="contact-fields">
+              <label for="contact-name">Name<input id="contact-name" name="name" type="text" autocomplete="name" required /></label>
+              <label for="contact-email">Email<input id="contact-email" name="email" type="email" autocomplete="email" required /></label>
+            </div>
+            <label for="contact-message">Message<textarea id="contact-message" name="message" rows="5" required></textarea></label>
+            <button class="button" type="submit">Get in touch <span aria-hidden="true">&#8599;</span></button>
+            <p id="contact-result" class="contact-result" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer shell"><span>&copy; <span id="year">2026</span> Poems by Coffee Table&trade;. All rights reserved.</span></footer>
+  <script src="phrases.js"></script>
+  <script src="assets/handwriting-font.js"></script>
+  <script src="script.js"></script>
+  <script src="brushstrokes.js"></script>
+</body>
+</html>

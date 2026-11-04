@@ -1,0 +1,6 @@
+.idea/
+.local-tools/
+.*-browser/
+.preview-*/
+.DS_Store
+Thumbs.db
