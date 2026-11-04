@@ -9,6 +9,18 @@
   <script>
     document.documentElement.classList.add('js-loading');
     window.addEventListener('load', () => document.documentElement.classList.remove('js-loading'), {once:true});
+    if (performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+      const previousRestoration = history.scrollRestoration;
+      history.scrollRestoration = 'manual';
+      if (location.hash) history.replaceState(history.state, '', location.pathname + location.search);
+      window.addEventListener('pageshow', () => {
+        window.scrollTo({top:0, left:0, behavior:'instant'});
+        requestAnimationFrame(() => {
+          window.scrollTo({top:0, left:0, behavior:'instant'});
+          history.scrollRestoration = previousRestoration;
+        });
+      }, {once:true});
+    }
   </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
