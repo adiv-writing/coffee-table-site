@@ -189,3 +189,61 @@ body{position:relative}
 
 .contact-form .button{color:#f0ede4;font-weight:700;letter-spacing:.12em}
 
+
+/* Keep card tracks within the page, and let descriptions wrap naturally. */
+.writing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.writing-card,.writing-card > *{min-width:0}
+.writing-card p,.writing-card:not(.card-dark) > p{max-width:none;white-space:normal}
+.fiction-summary{font-size:inherit;white-space:normal}
+.fiction-title-row{min-width:0}
+.fiction-title-row > span{min-width:0;overflow-wrap:anywhere}
+.fiction-subtitle{overflow-wrap:break-word}
+@media(max-width:900px){
+  .writing-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:none;row-gap:20px}
+  .writing-card{grid-row:auto;grid-template-rows:auto minmax(135px,1fr) auto auto}
+}
+@media(max-width:750px){
+  html{scroll-padding-top:140px}
+  .site-header{position:sticky;top:0;z-index:20;padding-top:14px;padding-bottom:14px}
+  .header-inner{row-gap:10px}
+  .site-header nav{width:100%;justify-content:space-between;gap:16px}
+  .hero{padding-top:38px}
+  .coffee-drawing{width:min(285px,80vw)}
+  .writing-card{padding:28px 24px;min-height:350px}
+}
+
+@media(max-width:750px){
+  .header-inner{row-gap:6px}
+  .site-header nav{justify-content:center;gap:24px}
+}
+
+@media(max-width:750px){
+  .header-inner{justify-content:center}
+}
+
+@media(max-width:750px){
+  .site-header{border-bottom:3px solid var(--forest)}
+}
+
+@media(max-width:750px){
+  .site-header{border-bottom-width:1px}
+  .header-inner{justify-content:flex-start}
+  .site-header nav{display:none}
+}
+
+.mobile-contact{display:none}
+@media(max-width:750px){
+  .header-inner{justify-content:space-between}
+  .mobile-contact{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;border:1px solid var(--forest);color:var(--forest);font-size:14px;font-weight:600;line-height:1.2}
+  .mobile-contact:hover{background:var(--forest);color:var(--paper)}
+}
+
+@media(max-width:750px){
+  .mobile-contact{background:var(--forest);color:var(--paper)}
+  .mobile-contact:hover{background:#24362f}
+}
+
+@media(max-width:750px){
+  .contact-form .button{background:var(--forest);color:var(--paper)}
+  .contact-form .button:hover{background:#24362f}
+}
