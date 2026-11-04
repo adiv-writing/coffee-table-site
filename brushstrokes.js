@@ -1,4 +1,8 @@
 (() => {
+  // Set to true to bring back the background brushstrokes.
+  const BRUSHSTROKES_ENABLED = false;
+  if (!BRUSHSTROKES_ENABLED) return;
+
   const ns = 'http://www.w3.org/2000/svg';
   const layer = document.createElementNS(ns, 'svg');
   layer.classList.add('background-brushstrokes');
