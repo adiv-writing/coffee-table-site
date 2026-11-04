@@ -369,3 +369,8 @@ body{position:relative}
   .contact-form .button{background:var(--forest);color:var(--paper)}
   .contact-form .button:hover{background:#24362f}
 }
+
+@media(max-width:750px){
+  .button > span[aria-hidden="true"],.card-top > span[aria-hidden="true"]{display:none}
+  .contact-form .button{gap:0;padding-inline:23px}
+}
