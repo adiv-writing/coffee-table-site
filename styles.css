@@ -374,3 +374,8 @@ body{position:relative}
   .button > span[aria-hidden="true"],.card-top > span[aria-hidden="true"]{display:none}
   .contact-form .button{gap:0;padding-inline:23px}
 }
+
+@media(max-width:750px){
+  /* Scroll the brown contact background beneath the sticky header. */
+  #contact{scroll-margin-top:-120px}
+}
