@@ -38,4 +38,4 @@ The contact form posts to Web3Forms using a public access key, keeping the recei
 
 ## Notes
 
-The site uses Google Fonts, so visitors need an internet connection to load those fonts; system fonts are used as fallbacks.
+Fonts are served locally from `assets/fonts/`; page loads do not contact Google Fonts. Font licenses are included. Web3Forms is the only external runtime service, contacted when the contact form is submitted.
